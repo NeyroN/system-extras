@@ -106,11 +106,11 @@ int main(int argc, char **argv)
     gid_t gid, gids[10];
 
     /* Until we have something better, only root and the shell can use su. */
-    myuid = getuid();
+    /*myuid = getuid();
     if (myuid != AID_ROOT && myuid != AID_SHELL) {
         fprintf(stderr,"su: uid %d not allowed to su\n", myuid);
         return 1;
-    }
+    }*/
 
     if(argc < 2) {
         uid = gid = 0;
